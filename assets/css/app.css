@@ -1,1 +1,79 @@
-/* This file is for your main application css. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-color: #00050C;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-weight: 900;
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.splash > div {
+    width: 100%;
+    max-width: 640px;
+}
+
+.splash-title > span:before {
+    content: "-";
+    color: white;
+    margin-right: 12px;
+}
+
+.splash-title > span {
+    color: red;
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .splash {
+	display: block;
+    }
+
+    .splash > div {
+	padding: 32px;
+    }
+
+    .splash-title > span:before {
+	display: none;
+    }
+
+    .splash-title > span {
+	display: block;
+	font-size: 60%;
+    }
+
+    
+}
