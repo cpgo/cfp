@@ -13,10 +13,10 @@
   </a>
   <div class="aered">
     <h2>Créer un compte sur le Slack</h2>
-    <form method="">
-      <input type="email" placeholder="vous@domain.io">
-      <input type="submit" value="Demander !">
-    </form>
+    <%= form_for @changeset, slack_path(@conn, :create), fn f -> %>
+      <%= email_input f, :email, placeholder: "vous@eux.io" %>
+      <%= submit "Demander !" %>
+    <% end %>
   </div>
 </div>
 
