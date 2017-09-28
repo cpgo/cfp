@@ -1,1 +1,149 @@
-/* This file is for your main application css. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-color: #2a363b;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #212121;
+    padding: 12px;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .icon {
+    transition: fill 0.2s ease-in;
+    fill: #323232;
+}
+
+footer .icon:hover {
+    fill: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-weight: 900;
+}
+
+.std-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e84a5f;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background-color 0.5s ease-in;
+    display: inline-block;
+}
+
+.icon {
+    fill: #fff;
+}
+
+.with-icon {
+    padding: 0;
+    padding-right: 14px;
+}
+
+.with-icon > div {
+    display: flex;
+    
+}
+
+.with-icon > div > * {
+    margin: auto 2px;
+}
+
+.with-icon > div > span {
+    flex: 1;
+}
+
+.with-icon > div > .icon {
+    align-self: flex-start;
+}
+
+.std-button:hover {
+    background-color: #ff847c;
+}
+
+main {
+    flex: 1;
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.splash > div {
+    width: 100%;
+    max-width: 640px;
+}
+
+
+.splash-title > span {
+    color: #e84a5f;
+}
+
+.highlight-p strong {
+    font-weight: 700;
+}
+
+.aered {
+    margin-top: 82px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .splash > div {
+	padding: 32px;
+    }
+
+    .highlight-p {
+	text-align: justify;
+    }
+
+    .splash-title {
+	text-align: center;
+    }
+
+    .main-button {
+	display: block;
+	text-align: center;
+	padding: 12px;
+    }
+
+    
+}
