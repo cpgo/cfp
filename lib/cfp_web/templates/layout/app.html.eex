@@ -18,7 +18,18 @@
 
     <%= render @view_module, @view_template, assigns %>
     <footer>
-      a
+      <a href="">
+	<div data-icon="ei-comment" data-size="m" class="icon"></div>
+      </a>
+      <a href="https://www.youtube.com/channel/UC-hC7y_ilQBq0QCa9xDu1iA">
+	<div data-icon="ei-sc-youtube" data-size="m" class="icon"></div>
+      </a>
+      <a href="https://twitter.com/lille_fp">
+	<div data-icon="ei-sc-twitter" data-size="m" class="icon"></div>
+      </a>
+      <a href="https://github.com/lillefp/cfp">
+	<div data-icon="ei-sc-github" data-size="m" class="icon"></div>
+      </a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>

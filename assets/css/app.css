@@ -33,7 +33,22 @@ body {
 }
 
 footer {
-    background-color: #355c7d;
+    background-color: #212121;
+    padding: 12px;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .icon {
+    transition: fill 0.2s ease-in;
+    fill: #323232;
+}
+
+footer .icon:hover {
+    fill: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
