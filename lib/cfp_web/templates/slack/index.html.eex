@@ -12,8 +12,8 @@
     </div>
   </a>
   <div class="aered">
-    <h2>Demander une invitation</h2>
-    <form>
+    <h2>Créer un compte sur le Slack</h2>
+    <form method="">
       <input type="email" placeholder="vous@domain.io">
       <input type="submit" value="Demander !">
     </form>

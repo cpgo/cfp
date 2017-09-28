@@ -1,5 +1,5 @@
 <footer>
-  <a href="<%= page_path @conn, :slack %>">
+  <a href="<%= slack_path @conn, :index %>">
     <div data-icon="ei-comment" data-size="m" class="icon"></div>
   </a>
   <a href="https://www.youtube.com/channel/UC-hC7y_ilQBq0QCa9xDu1iA">

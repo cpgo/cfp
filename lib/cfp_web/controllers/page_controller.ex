@@ -7,10 +7,5 @@ defmodule CfpWeb.PageController do
     render conn, "index.html"
   end
 
-
-  def slack(conn, _params) do
-    render conn, "slack.html"
-  end
-
   
 end

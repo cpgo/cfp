@@ -17,7 +17,7 @@ defmodule CfpWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/slack", PageController, :slack
+    resources "/slack", SlackController, only: [:index, :create]
   end
 
   # Other scopes may use custom stacks.

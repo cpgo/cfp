@@ -32,6 +32,29 @@ body {
     flex-direction: column;
 }
 
+
+.info,
+.error {
+    display: block;
+    font-weight: 100;
+    padding: 12px;
+}
+
+.info {
+    background-color: #dcedc1;
+    color: #11999e;
+}
+
+.error {
+    background-color: #ffc8c8;
+    color: #e84a5f;
+}
+
+.info:empty,
+.error:empty {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -57,7 +80,7 @@ header a:hover {
 
 footer .icon {
     transition: fill 0.2s ease-in;
-    fill: #323232;
+    fill: #52616b;
 }
 
 footer .icon:hover {
@@ -165,6 +188,7 @@ form input[type="submit"] {
 	text-align: justify;
     }
 
+    .splash h2,
     .splash-title {
 	text-align: center;
     }
@@ -173,6 +197,12 @@ form input[type="submit"] {
 	display: block;
 	text-align: center;
 	padding: 12px;
+    }
+
+    form input {
+	display: block;
+	margin-top: 12px;
+	width: 100%;
     }
 
     
