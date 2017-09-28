@@ -1,0 +1,22 @@
+<div>
+
+  <h1 class="splash-title"><span><%= Cfp.Slack.workspace%></span>.slack</h1>
+  <p class="highlight-p">
+    N'hésitez pas à nous rejoindre sur <strong>Slack</strong>, c'est assez actif et
+    l'ambiance est vraiment sympa ! (En toute objectivité.)
+  </p>
+  <a href="<%= Cfp.Slack.workspace_url %>" class="std-button main-button with-icon">
+    <div>
+      <div data-icon="ei-pointer" data-size="m" class="icon"></div>
+      <span>Accéder au Slack</span>
+    </div>
+  </a>
+  <div class="aered">
+    <h2>Demander une invitation</h2>
+    <form>
+      <input type="email" placeholder="vous@domain.io">
+      <input type="submit" value="Demander !">
+    </form>
+  </div>
+</div>
+

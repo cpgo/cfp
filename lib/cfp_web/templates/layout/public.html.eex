@@ -2,15 +2,18 @@
 <html lang="en">
   <head>
   </head>
-  <%= render "header.html" %>
-  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-  <title>Hello Cfp!</title>
+  <%= render "header.html", assigns %>
   <body>
+    <header>
+      <a href="<%= page_path @conn, :index %>">
+	Accueil
+      </a>
+    </header>
     <main class="splash">
       <%= render @view_module, @view_template, assigns %>
     </main>
 
-    <%= render "footer.html" %>
+    <%= render "footer.html", assigns %>
     <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>

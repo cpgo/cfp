@@ -11,10 +11,14 @@ defmodule Cfp.Slack do
     "https://#{workspace()}.slack.com"
   end
 
-  defp workspace do
+  @doc """
+  Returns the workspace's name
+  """
+  def workspace do
     Application.get_env(:cfp, CfpWeb.Endpoint)[:slack_workspace]
   end
 
+  @doc false
   defp token do
     Application.get_env(:cfp, CfpWeb.Endpoint)[:slack_token]
   end
