@@ -11,6 +11,10 @@
 }
 
 html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     padding: 0;
     margin: 0;
 }
@@ -18,25 +22,73 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    background-color: #00050C;
-    color: #FFFFFF;
+    background-color: #2a363b;
+    color: #ffffff;
     padding: 0;
     margin: 0;
+    font-weight: 100;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #355c7d;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
     font-weight: 900;
 }
 
+.std-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e84a5f;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background-color 0.5s ease-in;
+    display: inline-block;
+}
+
+.icon {
+    fill: #fff;
+}
+
+.with-icon {
+    padding: 0;
+    padding-right: 14px;
+}
+
+.with-icon > div {
+    display: flex;
+    
+}
+
+.with-icon > div > * {
+    margin: auto 2px;
+}
+
+.with-icon > div > span {
+    flex: 1;
+}
+
+.with-icon > div > .icon {
+    align-self: flex-start;
+}
+
+.std-button:hover {
+    background-color: #ff847c;
+}
+
+main {
+    flex: 1;
+}
+
 .splash {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    flex-direction: column;
 }
 
 
@@ -45,34 +97,37 @@ h1, h2, h3, h4, h5, h6, h7 {
     max-width: 640px;
 }
 
-.splash-title > span:before {
-    content: "-";
-    color: white;
-    margin-right: 12px;
-}
 
 .splash-title > span {
-    color: red;
+    color: #e84a5f;
 }
 
+.highlight-p strong {
+    font-weight: 700;
+}
+
+.aered {
+    margin-top: 82px;
+}
 
 @media screen and (max-width: 640px) {
-
-    .splash {
-	display: block;
-    }
 
     .splash > div {
 	padding: 32px;
     }
 
-    .splash-title > span:before {
-	display: none;
+    .highlight-p {
+	text-align: justify;
     }
 
-    .splash-title > span {
+    .splash-title {
+	text-align: center;
+    }
+
+    .main-button {
 	display: block;
-	font-size: 60%;
+	text-align: center;
+	padding: 12px;
     }
 
     

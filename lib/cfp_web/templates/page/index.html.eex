@@ -1,12 +1,21 @@
 <main class="splash">
   <div>
 
-    <h1 class="splash-title">LilleFP <span>Participer</span></h1>
-    <p>
+    <h1 class="splash-title"><span>participer</span>.lillefp</h1>
+    <p class="highlight-p">
       <strong>LilleFP</strong> est un événement récurrent de la scène Lilloise,
       qui a pour thématique l'usage et la présentation de technologies, de langages
       et d'outils <strong>beaux</strong> et <strong>bien pensés</strong>.<br />
       Cette application vous permet de soumettre des participations, pour être
       pro-actif dans la communauté !
+    </p>
+    <div class="aered">
+      <a href="#button" class="std-button main-button with-icon">
+	<div>
+	  <div data-icon="ei-sc-github" data-size="m" class="icon"></div>
+	  <span>Se connecter</span>
+	</div>
+      </a>
+    </div>
   </div>
 </main>
