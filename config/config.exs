@@ -15,12 +15,15 @@ config :cfp, CfpWeb.Endpoint,
   secret_key_base: "cEAl7MED5UrLy+8M/ySUG5UCqUQEuJ5cx6fFjlHc0umvoiqtRY1yd8EGt6vdf4+E",
   render_errors: [view: CfpWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Cfp.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+           adapter: Phoenix.PubSub.PG2],
+  slack_workspace: (System.get_env("SLACK_NAME") || "lillefp"),
+  slack_token: System.get_env("SLACK_TOKEN")
 
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
+
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
