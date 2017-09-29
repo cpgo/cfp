@@ -1,11 +1,11 @@
 <div>
 
-  <h1 class="splash-title"><span><%= Cfp.Slack.workspace%></span>.slack</h1>
+  <h1 class="splash-title"><span><%= Slack.workspace%></span>.slack</h1>
   <p class="highlight-p">
     N'hésitez pas à nous rejoindre sur <strong>Slack</strong>, c'est assez actif et
     l'ambiance est vraiment sympa ! (En toute objectivité.)
   </p>
-  <a href="<%= Cfp.Slack.workspace_url %>" class="std-button main-button with-icon">
+  <a href="<%= Slack.workspace_url %>" class="std-button main-button with-icon">
     <div>
       <div data-icon="ei-pointer" data-size="m" class="icon"></div>
       <span>Accéder au Slack</span>

@@ -1,4 +1,4 @@
-defmodule Cfp.Slack do
+defmodule Slack do
 
   @moduledoc """
   Some tools to communicate with Slack !

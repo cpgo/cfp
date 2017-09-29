@@ -3,7 +3,7 @@ defmodule CfpWeb.SlackController do
 
   plug :put_layout, "public.html"
 
-  alias Cfp.Slack.Invitation
+  alias Slack.Invitation
 
   def index(conn, _params) do
     changeset = Invitation.changeset(%Invitation{})

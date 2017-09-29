@@ -1,4 +1,4 @@
-defmodule Cfp.Slack.Invitation do
+defmodule Slack.Invitation do
 
   @moduledoc """
   Define Changeset for Slack invitation
