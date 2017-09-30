@@ -14,13 +14,12 @@ defmodule CfpWeb.Router do
   end
 
   scope "/", CfpWeb do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
     get "/", PageController, :index
+    resources "/slack", SlackController, only: [:index, :create, :new]
+
+    
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", CfpWeb do
-  #   pipe_through :api
-  # end
 end

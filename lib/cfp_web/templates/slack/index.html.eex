@@ -1,0 +1,21 @@
+<div>
+
+  <h1 class="splash-title"><span><%= Slack.workspace%></span>.slack</h1>
+  <p class="highlight-p">
+    N'hésitez pas à nous rejoindre sur <strong>Slack</strong>, c'est assez actif et
+    l'ambiance est vraiment sympa ! (En toute objectivité.)
+  </p>
+  <a href="<%= Slack.workspace_url %>" class="std-button main-button with-icon">
+    <div>
+      <div data-icon="ei-pointer" data-size="m" class="icon"></div>
+      <span>Accéder au Slack</span>
+    </div>
+  </a>
+  <div class="aered">
+    <h2>Créer un compte sur le Slack</h2>
+    <%= form_for @changeset, slack_path(@conn, :create), fn f -> %>
+      <%= email_input f, :email, placeholder: "vous@eux.io" %>
+      <%= submit "Demander !" %>
+    <% end %>
+  </div>
+</div>

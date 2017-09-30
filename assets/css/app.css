@@ -32,19 +32,55 @@ body {
     flex-direction: column;
 }
 
+
+.info,
+.error {
+    display: block;
+    font-weight: 100;
+    padding: 12px;
+}
+
+.info {
+    background-color: #dcedc1;
+    color: #11999e;
+}
+
+.error {
+    background-color: #ffc8c8;
+    color: #e84a5f;
+}
+
+.info:empty,
+.error:empty {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, footer {
+    padding: 12px;
+}
+
 footer {
     background-color: #212121;
-    padding: 12px;
     text-align: right;
 }
 
-footer a {
-    text-decoration: none;
+header a {
+    transition: color 0.2s ease-in;
+    color: #fff;
+    font-weight: 700;
+}
+
+header a:hover {
+    color: #e84a5f;
 }
 
 footer .icon {
     transition: fill 0.2s ease-in;
-    fill: #323232;
+    fill: #52616b;
 }
 
 footer .icon:hover {
@@ -56,13 +92,13 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 
 .std-button {
-    text-decoration: none;
     color: #fff;
     background-color: #e84a5f;
     font-weight: 700;
     border-radius: 4px;
     transition: background-color 0.5s ease-in;
     display: inline-block;
+    padding: 4px 22px;
 }
 
 .icon {
@@ -125,6 +161,25 @@ main {
     margin-top: 82px;
 }
 
+form h3 {
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+form button, 
+form input {
+    padding: 12px;
+    border: 0 solid red;
+    border-radius: 4px;
+}
+
+form button[type="submit"], 
+form input[type="submit"] {
+    background-color: #e84a5f;
+    color: #FFF;
+    font-weight: 900;
+}
+
 @media screen and (max-width: 640px) {
 
     .splash > div {
@@ -135,6 +190,7 @@ main {
 	text-align: justify;
     }
 
+    .splash h2,
     .splash-title {
 	text-align: center;
     }
@@ -143,6 +199,12 @@ main {
 	display: block;
 	text-align: center;
 	padding: 12px;
+    }
+
+    form input {
+	display: block;
+	margin-top: 12px;
+	width: 100%;
     }
 
     
