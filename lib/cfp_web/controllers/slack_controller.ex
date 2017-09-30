@@ -16,7 +16,10 @@ defmodule CfpWeb.SlackController do
     {changeset, flash, message} =
       case Invitation.perform(params) do
 	{:ok, {change, email}} ->
-	  {change, :info, email}
+	  case Slack.invite(email) do
+	    {:ok, _} -> {change, :info, "Invitation envoyée"}
+	    {:error, err} -> {change, :error, err}
+	  end
 	{:error, {change, error_message}} ->
 	  {change, :error, error_message}
       end
