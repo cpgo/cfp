@@ -20,7 +20,7 @@ defmodule Cfp.Mixfile do
   def application do
     [
       mod: {Cfp.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :ueberauth]
     ]
   end
 
@@ -41,7 +41,8 @@ defmodule Cfp.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:httpoison, "~> 0.13"}
+      {:httpoison, "~> 0.13"},
+      {:ueberauth, "~> 0.4"}
     ]
   end
 

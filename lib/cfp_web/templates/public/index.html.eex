@@ -10,7 +10,7 @@
   </p>
   
   <div class="aered">
-    <a href="#button" class="std-button main-button with-icon">
+    <a href="<%= global_path(@conn, :index) %>" class="std-button main-button with-icon">
       <div>
 	<div data-icon="ei-sc-github" data-size="m" class="icon"></div>
 	<span>Se connecter</span>

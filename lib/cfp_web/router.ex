@@ -19,6 +19,11 @@ defmodule CfpWeb.Router do
     get "/", PublicController, :index
     resources "/slack", SlackController, only: [:index, :create, :new]
 
+
+    scope "/private" do
+      get "/", GlobalController, :index
+    end
+
     
   end
 
