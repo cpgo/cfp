@@ -1,4 +1,4 @@
-defmodule CfpWeb.PageController do
+defmodule CfpWeb.PublicController do
   use CfpWeb, :controller
 
   plug :put_layout, "public.html"

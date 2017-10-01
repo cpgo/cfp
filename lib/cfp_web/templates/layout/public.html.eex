@@ -7,7 +7,7 @@
     <div class="error"><%= get_flash(@conn, :error) %></div>
     <div class="info"><%= get_flash(@conn, :info) %></div>
     <header>
-      <a href="<%= page_path @conn, :index %>">
+      <a href="<%= public_path @conn, :index %>">
 	Accueil
       </a>
     </header>

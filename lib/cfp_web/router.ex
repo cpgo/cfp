@@ -16,7 +16,7 @@ defmodule CfpWeb.Router do
   scope "/", CfpWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", PublicController, :index
     resources "/slack", SlackController, only: [:index, :create, :new]
 
     
