@@ -42,7 +42,8 @@ defmodule Cfp.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:httpoison, "~> 0.13"},
-      {:ueberauth, "~> 0.4"}
+      {:ueberauth, "~> 0.4"},
+      {:ueberauth_github, "~> 0.4"}
     ]
   end
 
