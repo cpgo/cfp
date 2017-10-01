@@ -19,6 +19,16 @@ config :cfp, CfpWeb.Endpoint,
   slack_workspace: (System.get_env("SLACK_NAME") || "lillefp"),
   slack_token: System.get_env("SLACK_TOKEN")
 
+
+config :ueberauth, Ueberauth,
+  providers: [
+    github: {Ueberauth.Strategy.Github, []}
+  ]
+
+config :ueberauth, Ueberauth.Strategy.Github.OAuth,
+  client_id: System.get_env("GITHUB_CLIENT_ID"),
+  client_secret: System.get_env("GITHUB_CLIENT_SECRET")
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
