@@ -17,12 +17,15 @@ config :cfp, CfpWeb.Endpoint,
   pubsub: [name: Cfp.PubSub,
            adapter: Phoenix.PubSub.PG2],
   slack_workspace: (System.get_env("SLACK_NAME") || "lillefp"),
-  slack_token: System.get_env("SLACK_TOKEN")
+  slack_token: System.get_env("SLACK_TOKEN"),
+  github_organization: (System.get_env("GITHUB_ORGANIZATION") || "lillefp"),
+  github_board: (System.get_env("GITHUB_BOARD_NAME") || "board")
 
 
 config :ueberauth, Ueberauth,
   providers: [
-    github: {Ueberauth.Strategy.Github, []}
+    github: {Ueberauth.Strategy.Github,
+	     [default_scope: "user,read:org"]}
   ]
 
 config :ueberauth, Ueberauth.Strategy.Github.OAuth,
